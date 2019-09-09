@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/shoe.css">
+    <link rel="stylesheet" href="css/shoe-grid.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script type="text/x-template" class="shoeTemplate">
+        {{#each shoes}}
+        <div class="allTheShoes">
+                <table>
+                        <tr>
+                            <td>theShoe brand</td>
+                            <td>{{this.brand}}</td>
+                        </tr>
+                        <tr>
+                            <td>theShoe color</td>
+                            <td>{{this.color}}</td>
+                          </tr>
+                          <tr>
+                                <td>theShoe size</td>
+                                <td>{{this.size}}</td>
+                              </tr>
+                          <tr>
+                              <td>Price</td>
+                              <td>{{this.price}}</td>
+                            </tr>
+                        </table>
+        </div>
+        {{/each}}
+    </script>
+
+</head>
+
+<body>
+    <div class="content">
+    <div class="col-12">
+
+    <div class="row">
+        <diV class="col-6">
+            <h1>Shoe Catalogue</h1>
+        </diV>
+    </div>
+    <div class="row">
+        <div class="col-6">
+                <select>
+                        <option >Select color</option>
+                        <option class="selectColor" value="1">Black</option>
+                        <option class="selectColor"value="2">White</option>
+                        <option class="selectColor" value="3">Grey</option>
+                        <option class="selectColor" value="3">Pink</option>
+                        <option class="selectColor" value="3">Blue</option>
+                        <option class="selectColor" value="3">Peach</option> 
+                        <option class="selectColor" value="3">Orange</option>
+                        <option class="selectColor" value="3">Red</option>
+                        <option class="selectColor" value="3">Peach</option> 
+                        <option class="selectColor" value="3">Navy</option>
+                        <option class="selectColor" value="3">Red</option>
+                        <option class="selectColor" value="3">Peach</option> 
+                        <option class="selectColor" value="3">White</option>
+                        <option class="selectColor" value="3">Red</option>
+                        <option class="selectColor" value="3">Peach</option> 
+                        <option class="selectColor" value="3">Brown</option>
+                        <option class="selectColor" value="3">Navy</option>
+                        <option class="selectColor" value="3">Peach</option> 
+                        <option class="selectColor" value="3">Black</option>
+                        <option class="selectColor"value="3">Grey</option>
+                      
+                        
+
+                      </select>
+
+                      <select>
+                            <option>Select size</option>
+                            <option class="selectSize" value="1">1</option>
+                            <option class="selectSize" value="2">2</option>
+                            <option class="selectSize" value="3">3</option>
+                            <option class="selectSize" value="3">4</option>
+                            <option class="selectSize" value="3">5</option>
+                            <option class="selectSize" value="3">6</option> 
+                            <option class="selectSize" value="3">7</option>
+                            <option class="selectSize" value="3">8</option>
+                            <option class="selectSize" value="3">6</option> 
+                            <option class="selectSize" value="3">7</option>
+                            <option class="selectSize" value="3">8</option>
+                            <option class="selectSize" value="3">6</option> 
+                            <option class="selectSize" value="3">7</option>
+                            <option class="selectSize" value="3">8</option>
+                            <option class="selectSize" value="3">6</option> 
+                            <option class="selectSize" value="3">7</option>
+                            <option class="selectSize" value="3">8</option>
+                            <option class="selectSize" value="3">6</option> 
+                            <option class="selectSize"value="3">7</option>
+                           
+    
+                          </select>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-6">
+                <select>
+                        <option>Select brand</option>
+                        <option class="selectBrand"value="1">Nike</option>
+                        <option class="selectBrand" value="2">Adiddas</option>
+                        <option class="selectBrand" value="3">Lacoste</option>
+                        <option class="selectBrand" value="3">Reebork</option>
+                        <option class="selectBrand" value="3">Le Coq Sportif</option>
+                </select> 
+                
+                <button class="searchButton" type="button" name="button">Search</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="shoeDisplay">
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <script src="shoe.js" charset="utf-8"></script>
+    <script src="shoe-dom.js" charset="utf-8"></script>
+    <!-- <script src="shoe-stock.js" charset="utf-8"></script> -->
+
+
+</body>
+
+</html>
